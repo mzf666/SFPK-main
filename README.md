@@ -3,7 +3,7 @@
 ## Overview
 
 **What is SFPK?** 
-This repo contains the pre-release implementation of **S**parsity Evolutionary **F**okker-**P**lanck-**K**olmogorov Equation pruner (**SFPK**-pruner), a novel probabilistic neural network pruner proposed in [SFPK: Probabilistic Neural Pruning via Sparsity Evolutionary Fokker-Planck-Kolmogorov Equation](https://openreview.net/forum?id=hJ1BaJ5ELp). 
+This repo contains the pre-release implementation of **S**parsity Evolutionary **F**okker-**P**lanck-**K**olmogorov Equation pruner (**SFPK**-pruner), a novel probabilistic neural network pruner proposed in [SFPK: Probabilistic Neural Pruning via Sparsity Evolutionary Fokker-Planck-Kolmogorov Equation, ICLR 2025](https://openreview.net/forum?id=hJ1BaJ5ELp). 
 
 Roughly speaking, SFPK explicitly models the evolution of the population (e.g. mask distribution) of the optimal subnetwork as the sparsity progressively increases. Therefore, one can progressively prune a dense model to the target sparsity level, by simulating the SFPK dynamic initialized from the dense model (with $0$-sparsity).
 
