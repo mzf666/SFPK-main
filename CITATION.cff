@@ -1,0 +1,9 @@
+cff-version: 1.0.0
+title: "Probabilistic Neural Pruning via Sparsity Evolutionary Fokker-Planck-Kolmogorov Equation"
+version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Mo"
+    given-names: "Zhanfeng"
+year: 2025
+repository-code: "https://openreview.net/forum?id=hJ1BaJ5ELp"
