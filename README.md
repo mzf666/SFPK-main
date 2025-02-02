@@ -1,4 +1,4 @@
-# Official Implementation of Sparsity Evolutionary Fokker-Planck-Kolmogorov Equation (SFPK)
+# Official Implementation of Sparsity Evolutionary Fokker-Planck-Kolmogorov Equation (ICLR 2025) 
 
 ## Overview
 
@@ -12,13 +12,13 @@ Conceptually similar to the traditional [Fokker-Planck-Kolmogorov (FPK)](https:/
 
 
 **How does SFPK work?**
-In practice, the SFPK-pruner can be interpreted as running an interacting ensemble of $n$ mask trajectories with increasing sparsity. While each mask is pulled by an attraction force (<span style="color:blue">blue arrows</span>) from the local optimum of the next sparsity level, the interaction energy introduces repulsive forces (<span style="color:red">red arrows</span>) between pairs of trajectories, which encourages the trajectories to explore diverse optima. This exploration effect is further enhanced by the gradient noise induced by the mini-batch gradient computation. 
+Intuitively, SFPK-pruner can be interpreted as running an interacting ensemble of $n$ mask trajectories with increasing sparsity. While each mask is pulled by an attraction force (<span style="color:blue">blue arrows</span>) from the local optimum of the next sparsity level, the interaction energy introduces repulsive forces (<span style="color:red">red arrows</span>) between pairs of trajectories, which encourages the trajectories to explore diverse optima. This exploration effect is further enhanced by the gradient noise induced by the mini-batch gradient computation. 
 
 <div align="center">
-  <img src="imgs/SFPK.png" width="650">
+  <img src="imgs/SFPK.png" width="700">
 </div>
 
-In practice, our SFPK-pruner is a model-agnostic method since it does not rely on a specific formulation of the model loss with respect to the model parameters and masks. Additionally, one can implement the mask variable as either filter masks, channel masks, or node masks to conduct structured pruning with desired granularity.
+In practice, our SFPK-pruner is a model-agnostic pruning method since it does not rely on a specific formulation of the model loss with respect to the model parameters and masks. Additionally, one can implement the mask variable as either filter masks, channel masks, or node masks to conduct structured pruning with desired granularity.
 
 -----
 
